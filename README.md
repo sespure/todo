@@ -4,14 +4,13 @@ Todo is a SwiftUI task management app that uses SwiftData for local persistence.
 
 ## Screenshots
 
-![Home Screen]<img width="590" height="1278" alt="IMG_1251" src="https://github.com/user-attachments/assets/fecd4ade-d5a9-4e5e-82de-73194a864db9" />
+<div align="center">
+  
+| Home Screen | Task List | Add Task Sheet |
+|:-:|:-:|:-:|
+| <img src="https://github.com/user-attachments/assets/fecd4ade-d5a9-4e5e-82de-73194a864db9" width="190" alt="Home Screen"/> | <img src="https://github.com/user-attachments/assets/3b3cb204-6206-4a83-b7e4-0b898dc29503" width="190" alt="Task List"/> | <img src="https://github.com/user-attachments/assets/432dbe7e-7905-44c9-8b81-234581707951" width="190" alt="Add Task Sheet"/> |
 
-
-![Task List]<img width="590" height="1278" alt="IMG_1252" src="https://github.com/user-attachments/assets/3b3cb204-6206-4a83-b7e4-0b898dc29503" />
-
-
-![Add Task Sheet]<img width="590" height="1278" alt="IMG_1254" src="https://github.com/user-attachments/assets/432dbe7e-7905-44c9-8b81-234581707951" />
-
+</div>
 
 ## Requirements
 
@@ -88,4 +87,4 @@ Keep this README focused on high-level project information:
 - Setup or dependency changes.
 - Architectural Decision Records when important technical decisions are made.
 
-Do not document implementation details, obvious property names, basic SwiftUI syntax, or small local state here. Use DocC comments near the relevant code only when a function, algorithm, or local state is complex enough to need explanation.
+Do not document implementation details, obvious property names, basic SwiftUI syntax, or small local state here. Use DocC comments near the relevant code only when a function, algorithm, or local context is complex or non-obvious.
