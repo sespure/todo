@@ -4,11 +4,14 @@ Todo is a SwiftUI task management app that uses SwiftData for local persistence.
 
 ## Screenshots
 
-![Home Screen](docs/screenshots/home-screen.png)
+![Home Screen]<img width="590" height="1278" alt="IMG_1251" src="https://github.com/user-attachments/assets/fecd4ade-d5a9-4e5e-82de-73194a864db9" />
 
-![Task List](docs/screenshots/task-list.png)
 
-![Add Task Sheet](docs/screenshots/add-task-sheet.png)
+![Task List]<img width="590" height="1278" alt="IMG_1252" src="https://github.com/user-attachments/assets/3b3cb204-6206-4a83-b7e4-0b898dc29503" />
+
+
+![Add Task Sheet]<img width="590" height="1278" alt="IMG_1254" src="https://github.com/user-attachments/assets/432dbe7e-7905-44c9-8b81-234581707951" />
+
 
 ## Requirements
 
