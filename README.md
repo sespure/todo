@@ -2,6 +2,8 @@
 
 Todo is a SwiftUI task management app that uses SwiftData for local persistence.
 
+Current app version: 1.1
+
 ## Screenshots
 
 <div align="center">
@@ -14,19 +16,20 @@ Todo is a SwiftUI task management app that uses SwiftData for local persistence.
 
 ## Requirements
 
-- iOS 17.0+
-- Xcode 15.0+
-- Swift 5.9+
+- iOS 26.0+
+- Xcode 26.5+
+- Swift language mode: Swift 5
+- Supported devices: iPhone and iPad
 
-SwiftData requires iOS 17 and Swift 5.9 or newer.
+The app uses SwiftData and optionally the SwiftUI Liquid Glass UI modifiers. SwiftData requires a modern SDK; the project currently targets iOS 26 in its Xcode settings. If you don't have Liquid Glass modifiers available in your SDK, either update Xcode or remove/replace the custom glass modifiers in the UI.
 
 ## Overview
 
 The app is organized around a simple tab-based structure:
 
-- Home: Provides a dashboard-style entry point for the user's day.
-- Tasks: Displays persisted tasks and provides access to task creation.
-- Settings: Reserved for future app preferences and configuration.
+- Home: A dashboard-style entry point with summary stats, an add-task action, and a next-tasks preview.
+- Tasks: Displays persisted tasks, supports completion toggling, filtering, sorting, and deletion, and provides access to task creation.
+- Settings: Controls task visibility, home-screen presentation, and app information.
 
 SwiftData is configured at the app root so task data can be shared across screens through the SwiftUI environment.
 
@@ -68,14 +71,18 @@ This flow keeps task persistence centralized in SwiftData while letting SwiftUI 
 
 ## Current Limitations
 
-- Home summary values are placeholder content.
-- Settings is a placeholder screen.
-- Tasks can be created, but editing, deletion, completion toggling, and due dates are not implemented yet.
 - Screenshot assets still need to be added under `docs/screenshots/`.
+- Editing tasks in-place is not implemented yet.
+- The app is still intentionally lightweight and focused on local task management.
 
 ## Build And Run
 
-Open the project in Xcode and run the `todo` app target on an iOS 17.0+ simulator or device.
+Open the project in Xcode and run the `todo` app target on an iOS 26.0+ simulator or device.
+
+Project versioning:
+
+- Marketing Version: 1.1
+- Current Project Version (build): 2
 
 ## Documentation Rule
 

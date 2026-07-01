@@ -13,11 +13,19 @@ struct AddTaskView: View {
     @Environment(\.modelContext) private var modelContext
 
     @State private var title = ""
+    @State private var hasDueDate = false
+    @State private var dueDate = Date()
 
     var body: some View {
         NavigationStack {
             Form {
                 TextField("Task name", text: $title)
+
+                Toggle("Has due date", isOn: $hasDueDate)
+
+                if hasDueDate {
+                    DatePicker("Due", selection: $dueDate, displayedComponents: [.date, .hourAndMinute])
+                }
             }
             .navigationTitle("New Task")
             .toolbar {
@@ -29,7 +37,7 @@ struct AddTaskView: View {
 
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Save") {
-                        let newTask = TaskItem(title: title)
+                        let newTask = TaskItem(title: title, dueDate: hasDueDate ? dueDate : nil)
                         modelContext.insert(newTask)
                         dismiss()
                     }
